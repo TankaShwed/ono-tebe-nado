@@ -43,10 +43,6 @@
   height: 105px;
 }
 
-.header__contacts {
-  width: 240px;
-}
-
 .contacts {
   display: flex;
   flex-direction: column;
@@ -297,6 +293,7 @@
 .header__contacts {
   display: flex;
   justify-content: flex-end;
+  width: 240px;
 }
 
 .header__contacts .contacts,
