@@ -85,13 +85,17 @@
   font-size: 100px;
   font-weight: 700;
   line-height: 115%;
-  letter-spacing: 30px;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   word-spacing: -22px;
 }
 
 .accent-span {
   display: block;
+}
+
+.cover__title-indent{
+  letter-spacing: 0.6em;
 }
 
 .text-center {
