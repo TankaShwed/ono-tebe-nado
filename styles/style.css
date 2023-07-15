@@ -94,7 +94,7 @@
   display: block;
 }
 
-.cover__title-indent{
+.cover__title-indent {
   letter-spacing: 0.6em;
 }
 
@@ -297,7 +297,7 @@
 .header__contacts {
   display: flex;
   justify-content: flex-end;
-  width: 240px;
+  font-style: normal;
 }
 
 .header__contacts .contacts,
