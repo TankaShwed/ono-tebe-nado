@@ -175,6 +175,7 @@ p {
 
 .card {
   display: block;
+  background-size: cover;
 }
 
 .card__article {
