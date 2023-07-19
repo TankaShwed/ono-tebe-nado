@@ -13,7 +13,7 @@
     <header class="header content-section">
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item header__menu-item_active">
+          <li class="header__menu-item_active">
             <a class="header__menu-link" href="#0">главная</a>
           </li>
           <li class="header__menu-item">
@@ -31,12 +31,16 @@
           alt="Логотип проекта"
         />
       </a>
-      <address class="header__contacts">
-        <div class="contacts">
-          <a href="tel:+99995555555">+9 999 555 5555</a>
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <p>наб. Принсенграхт 263-265, Амстердам</p>
-        </div>
+      <address class="contacts header__contacts">
+        <a class="header__contacts-address" href="tel:+99995555555"
+          >+9 999 555 5555</a
+        >
+        <a class="header__contacts-address" href="mailto:info@sobaka.ge"
+          >info@sobaka.ge</a
+        >
+        <p class="header__contacts-address">
+          наб. Принсенграхт 263-265, Амстердам
+        </p>
       </address>
     </header>
     <main>
@@ -67,7 +71,7 @@
         <h2 class="lots__title">Лоты</h2>
         <ul class="lots__cards">
           <li class="card lots__card-film">
-            <a href="#" class="card__lot">
+            <a class="card__lot" href="#">
               <article class="card__article lens">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
@@ -81,7 +85,7 @@
             </a>
           </li>
           <li class="card lots__card-book">
-            <a href="#" class="card__lot">
+            <a class="card__lot" href="#">
               <article class="card__article lens">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
@@ -98,7 +102,7 @@
             </a>
           </li>
           <li class="card lots__card-picture">
-            <a href="#" class="card__lot">
+            <a class="card__lot" href="#">
               <article class="card__article lens">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
@@ -113,11 +117,11 @@
             </a>
           </li>
         </ul>
-        <a href="#0" class="lots__more">посмотреть больше</a>
+        <a class="lots__more" href="#0">посмотреть больше</a>
       </section>
       <section class="about content-section">
         <div>
-          <a href="#" class="about__logo">
+          <a class="about__logo" href="#">
             <img
               class="about__logo-image"
               src="./images/logo-white.svg"
@@ -149,23 +153,27 @@
       </section>
     </main>
     <footer class="footer content-section">
-      <address class="footer__contacts">
-        <div class="contacts">
-          <a href="tel:+99995555555">+9 999 555 5555</a>
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <p>наб. Принсенграхт 263-265, Амстердам</p>
-        </div>
+      <address class="contacts footer__contacts">
+        <a class="footer__contacts-address" href="tel:+99995555555"
+          >+9 999 555 5555</a
+        >
+        <a class="footer__contacts-address" href="mailto:info@sobaka.ge"
+          >info@sobaka.ge</a
+        >
+        <p class="footer__contacts-address">
+          наб. Принсенграхт 263-265, Амстердам
+        </p>
       </address>
-      <nav class="footer__menu">
+      <nav>
         <ul class="footer__menu-list">
-          <li class="footer__menu-item footer__menu-item_active">
-            <a class="footer__menu-link" href="#0">главная</a>
+          <li>
+            <a href="#0">главная</a>
           </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#0">посмотреть лоты</a>
+          <li>
+            <a href="#0">посмотреть лоты</a>
           </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#0">об аукционе</a>
+          <li>
+            <a href="#0">об аукционе</a>
           </li>
         </ul>
       </nav>
