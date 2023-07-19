@@ -1,16 +1,18 @@
 .content-section {
   box-sizing: border-box;
   width: 100%;
-  max-width: 1440px;
   margin: auto;
   padding: 0 50px;
+  margin-bottom: 180px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 94px 50px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0;
 }
 
 .header__menu-list {
@@ -51,37 +53,23 @@
   list-style: none;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 180px;
-}
-
 .cover {
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 757px;
   background-size: cover;
-  padding: 0 0;
   position: relative;
-}
-
-.cover__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 127px;
-  padding: 50px 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  min-height: 757px;
+  padding-top: 165px;
 }
 
 .lens {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .content {
@@ -95,34 +83,44 @@
   line-height: 115%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  word-spacing: -22px;
+  padding-bottom: 135px;
+  position: relative;
+  z-index: 1;
+}
+
+.title__accent-span {
+  display: block;
 }
 
 .accent-span {
   display: block;
+  margin-top: 20px;
+  line-height: 1;
 }
 
 .cover__title-indent {
   letter-spacing: 0.6em;
 }
 
+.cover__title-indent-reset-space {
+  letter-spacing: 0;
+}
+
 .text-center {
   text-align: center;
-  margin: 12px 0 0 8px;
-  padding-left: 1.5vh;
-  width: 1280px;
 }
 
 .text-right {
   text-align: right;
-  margin: 6px -30px 0 15px;
 }
 
-.cover__content-text-button {
+.cover__text-button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 78px;
+  position: relative;
+  z-index: 1;
 }
 
 .cover__title-text {
@@ -175,17 +173,24 @@
 .card {
   display: block;
   background-size: cover;
+  min-height: 450px;
+  width: 430px;
+}
+
+.card__lot {
+  text-decoration: none;
+  height: 100%;
 }
 
 .card__article {
-  height: 450px;
-  width: 430px;
+  height: 100%;
+  width: 100%;
   padding: 50px 40px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   position: relative;
-  background-size: contain;
+  background-size: cover;
 }
 
 .lots__card-film {
@@ -210,7 +215,6 @@
 
 .card__text {
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   line-height: 120%;
 }
@@ -225,7 +229,6 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding-bottom: 16vh;
 }
 
 .about__article-image {
@@ -273,6 +276,8 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 90px;
+  margin-bottom: 0;
 }
 
 .footer__contacts {
